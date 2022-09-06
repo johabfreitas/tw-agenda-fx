@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 	
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
 	
 <BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.johabfreitas.agenda.fx.MainController">
 	
@@ -9,7 +9,17 @@
 		<Label BorderPane.alignment="CENTER" text="Região central"></Label>
 	</center>
 	<top>
-		<Label BorderPane.alignment="CENTER_LEFT" text="Região superior"></Label>
+	<!-- 	HBox coloca todos elementos do seu interior um ao lado do outro -->
+		<HBox>
+			<children>
+				<Label text="Cabeçalho"></Label>
+				<Button text="Botão"></Button>
+			</children>
+			<children>
+				<Label text="Cabeçalho"></Label>
+				<Button text="Botão"></Button>
+			</children>			
+		</HBox>
 	</top>
 	<bottom>
 		<Label BorderPane.alignment="CENTER_RIGHT" text="Região do rodapé"></Label>
